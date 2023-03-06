@@ -5,7 +5,7 @@ import com.estremor.mercadospring.domain.Product;
 import java.util.List;
 import java.util.Optional;
 
-public interface IProductoRepository {
+public interface IProductRepository {
     List<Product> getAll();
     Optional<List<Product>> getByCategory(int categoryId);
     Optional<List<Product>> getScarseProducts(int quantity);
